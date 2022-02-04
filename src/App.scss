@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: Josefin Sans;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+header{
+  background: url(./images/desktop/image-hero.jpg);
+  background-size:  contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  filter:brightness(80%);
+  .navegation{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  .navegation nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Alata;
+    
+    }
+    ul{
+      display: flex;
+      li ~ li{
+        margin-left: 30px;
+      }
+      a{
+      font-size: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-weight: 300;
+      }
+    }
+    a:hover:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 5px auto;
+    }
+    .home:hover:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 5px auto;
+    }
+  }
+  
+  .title{
+    border: 2px solid white;
+    width: 500px;
+    height: 240px;
+    margin-top: 110px;
+    h2{
+      color: white;
+      font-weight: 300;
+      margin: 45px 0 45px 40px;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: 2px;
+      text-align:left;
+      font-weight: 3600;
+    }
+  }
+}
+
+.container-vr{
+  display: flex;
+  align-items: flex-end;
+  max-width: 1200px;
+  margin: -20px auto;
+  .text-vr{
+    display: grid;
+    align-items: flex-end;
+    width: 600px;
+    height: 320px;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    margin-left: -140px;
+    padding-left: 100px;
+  }
+  h1{
+    // width: 330px
+    font-size: 50px;
+    line-height:52px;
+    letter-spacing: 1px;
+    font-family:Josefin Sans ;
+    font-weight: 300;
+  }
+  p{
+    width: 480px;
+    line-height: 30px;
+    color: hsl(0, 0%, 55%);
+    font-family: Alata;
+    font-weight: 300;
+    text-align: left;
+  }
+}
+
+.creation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;margin-top: 130px;
+  h1{
+    font-size: 50px;
+    line-height:52px;
+    letter-spacing: 1px;
+    font-family:Josefin Sans ;
+    font-weight: 300;
+  }
+  button{
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-family:Alata;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    cursor: pointer;
+  }
+}
+
+.container-creations{
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 256px);
+  justify-content: space-between;
+  // div ~ div{
+  //   margin-left: 30px;
+  // }
+  div{
+    max-width: 256px;
+    position: relative;
+    margin-bottom: 40px;
+    img{
+    filter:brightness(70%);  
+    }
+    h3{
+      width: 160px;
+      font-size: 30px;
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      color: white;
+      font-weight: 300;
+    }
+  }
+  div:hover{
+    img{
+      opacity: .3;
+    }
+    h3{
+      color: black;
+    }
+  }
+}
+
+.footer-bg{
+  background-color: black;
+}
+
+.footer{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  color: white;
+  .first-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .second-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+   a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Alata;
+  }
+  div ul{
+    display: flex;
+    margin-top: 20px;
+    li{
+      position: relative;
+    }
+    li ~ li{
+      margin-left: 30px;
+    }
+    li a{
+    font-size: 15px;
+    font-weight: 300;
+    }
+  }
+  a:hover:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px auto;
+  
+  }
+  p{
+    color: white;
+    margin-top: 20px;
+  }
+}
+
+  .redes{
+    display: flex;
+    justify-content: flex-end;
+    a{
+      padding-top: 5PX;
+    }
+    a ~ a {
+      margin-left: 20px;
+      
+    }
+  }
+
+
